@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Supratik Chakraborty
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Supratik Chakraborty} \\ \vspace{1pt}
+    \small +91 8584832114 $|$ \href{mailto:supratikofficial1@gmail.com}{\underline{supratikofficial1@gmail.com}} $|$ 
+    \href{https://supratikch.com}{\underline{supratikch.com}} $|$
+    \href{https://www.linkedin.com/in/supratikch}{\underline{linkedin.com/in/supratikch}} $|$
+    \href{https://github.com/deagleSC}{\underline{github.com/deagleSC}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {West Bengal University of Technology}{Kolkata, India}
+      {B.Tech (Bachelor of Technology) in Information Technology; CGPA: 9.11}{Jul. 2019 -- Aug. 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer (Full-Stack)}{Mar. 2024 -- Present}
+      {Trumio}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected multi-tenant admin backend with RBAC, license enforcement, and policy-driven workflows for 5 enterprise customers (500+ users); reduced operational overhead by 30--40\% through zero-touch configuration and automated onboarding}
+        \resumeItem{Built authorization-aware analytics services with strict tenant isolation and RBAC for managerial reporting; improved decision cycles by 35--45\% with zero data access or compliance violations in production}
+        \resumeItem{Designed resilient analytics ingestion layer integrating Google Analytics and Hotjar with schema validation, rate limiting, and fault tolerance; increased behavioral data coverage by 65--75\%}
+        \resumeItem{Orchestrated backend pipeline processing 200--300 PRs and feedback records monthly with PII masking, NDA boundaries, and vendor-safe contracts; reduced manual review effort by 45--55\% while eliminating compliance risk}
+        \resumeItem{Owned backend delivery for 10+ production releases with bi-weekly deployments; improved observability, validation, and rollback readiness, reducing post-release incidents by 25--35\%}
+        \resumeItem{Initiated 40+ component internal design system distributed as npm package; improved UI consistency and reduced frontend delivery time by 15--25\% for internal teams}
+        \resumeItem{\textbf{Tech Stack}: FastAPI, Python, MongoDB, REST APIs, Azure, Vite + React, Storybook, Git}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Founding Engineer (SDE-1)}{Oct. 2023 -- Mar. 2024}
+      {Reunion}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Enhanced web scraping pipelines using BeautifulSoup to extract structured data from 20+ government real-estate portals; implemented distributed ingestion workflows with Celery + RabbitMQ processing 100+ records per run}
+        \resumeItem{Integrated Keycloak for secure RBAC and maintained scalable data pipelines supporting real-time property data aggregation across multiple government sources}
+        \resumeItem{\textbf{Tech Stack}: Python, Celery, RabbitMQ, Keycloak, BeautifulSoup, Gatsby, Redux}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Chessvine — AI Chess Analysis Platform}}{\href{https://chessvine.vercel.app}{chessvine.vercel.app}}
+          \resumeItemListStart
+            \resumeItem{Architected asynchronous AI analysis pipeline using Gemini 2.0 Flash with Cloud Tasks + Cloud Run workers; generates player-specific insights and auto-creates 2 tactical puzzles per game with $<$5s AI inference latency}
+            \resumeItem{Built full-stack SaaS featuring interactive chess board, real-time status polling, PGN bulk upload/parsing, and 6+ dashboard views; deployed with 99.5\%+ uptime via Dockerized Cloud Build CI/CD}
+            \resumeItem{\textbf{Tech Stack}: Next.js, Express, MongoDB, GCP, Docker}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Javascript, Typescript, HTML/CSS, C++, SQL} \\
+     \textbf{Frameworks \& Libraries}{: FastAPI, Node.js, Express, React, Next.js, Vite, Zustand, Redux} \\
+     \textbf{Platforms \& Tools}{: Azure, Keycloak, GitHub Actions, Docker, Linux, Git, GitHub, LaTeX}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
