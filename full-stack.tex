@@ -137,11 +137,12 @@
       {Software Engineer (Full-Stack)}{Mar. 2024 -- Present}
       {Trumio}{Remote}
       \resumeItemListStart
-        \resumeItem{Architected multi-tenant admin backend with RBAC, license enforcement, and policy-driven workflows for 5 enterprise customers (500+ users); reduced operational overhead by 30--40\% through zero-touch configuration and automated onboarding}
-        \resumeItem{Built authorization-aware analytics services with strict tenant isolation and RBAC for managerial reporting; improved decision cycles by 35--45\% with zero data access or compliance violations in production}
+        \resumeItem{Architected multi-tenant admin backend with RBAC, license enforcement, and policy-driven workflows for 5 enterprise customers (500+ users); cut operational overhead by 30--40\% through zero-touch configuration and automated onboarding}
+        \resumeItem{Built authorization-aware analytics services with strict tenant isolation and RBAC for managerial reporting; accelerated decision cycles by 35--45\% with zero data access or compliance violations in production}
         \resumeItem{Designed resilient analytics ingestion layer integrating Google Analytics and Hotjar with schema validation, rate limiting, and fault tolerance; increased behavioral data coverage by 65--75\%}
-        \resumeItem{Orchestrated backend pipeline processing 200--300 PRs and feedback records monthly with PII masking, NDA boundaries, and vendor-safe contracts; reduced manual review effort by 45--55\% while eliminating compliance risk}
-        \resumeItem{Owned backend delivery for 10+ production releases with bi-weekly deployments; improved observability, validation, and rollback readiness, reducing post-release incidents by 25--35\%}
+        \resumeItem{Orchestrated backend pipeline processing 200--300 PRs and feedback records monthly with PII masking, NDA boundaries, and vendor-safe contracts; minimized manual review effort by 45--55\% while eliminating compliance risk}
+        \resumeItem{Owned backend delivery for 10+ production releases with bi-weekly deployments; enhanced observability, validation, and rollback readiness, reducing post-release incidents by 25--35\%}
+        \resumeItem{Led frontend performance optimization across core surfaces using bundle splitting, render-path optimization, and memoization; boosted Lighthouse scores by 12--18\% and shortened time-to-interactive for enterprise-scale usage}
         \resumeItem{Initiated 40+ component internal design system distributed as npm package; improved UI consistency and reduced frontend delivery time by 15--25\% for internal teams}
         \resumeItem{\textbf{Tech Stack}: FastAPI, Python, MongoDB, REST APIs, Azure, Vite + React, Storybook, Git}
       \resumeItemListEnd
@@ -165,8 +166,15 @@
           {\textbf{Chessvine — AI Chess Analysis Platform}}{\href{https://chessvine.vercel.app}{chessvine.vercel.app}}
           \resumeItemListStart
             \resumeItem{Architected asynchronous AI analysis pipeline using Gemini 2.0 Flash with Cloud Tasks + Cloud Run workers; generates player-specific insights and auto-creates 2 tactical puzzles per game with $<$5s AI inference latency}
-            \resumeItem{Built full-stack SaaS featuring interactive chess board, real-time status polling, PGN bulk upload/parsing, and 6+ dashboard views; deployed with 99.5\%+ uptime via Dockerized Cloud Build CI/CD}
+            \resumeItem{Developed full-stack SaaS featuring interactive chess board, real-time status polling, PGN bulk upload/parsing, and 6+ dashboard views; deployed with 99.5\%+ uptime via Dockerized Cloud Build CI/CD}
             \resumeItem{\textbf{Tech Stack}: Next.js, Express, MongoDB, GCP, Docker}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Hirevine — AI-Powered Recruitment Platform}}{\href{https://hirevine.ai}{hirevine.ai}}
+          \resumeItemListStart
+            \resumeItem{Designed serverless resume parsing system powered by Gemini 2.0 Flash multimodal API; processes PDFs via Cloud Tasks + Cloud Run workers, extracting structured candidate data (skills, experience, education) and computing JD match scores with $<$10s latency}
+            \resumeItem{Engineered full-stack recruitment SaaS featuring real-time AI interviews with SSE streaming, voice I/O via Web Speech API + Google Cloud TTS, and human-in-the-loop evaluation workflow}
+            \resumeItem{\textbf{Tech Stack}: Next.js, Express, PostgreSQL, GCP, Docker}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
